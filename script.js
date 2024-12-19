@@ -10,7 +10,7 @@ document.getElementById('contact-form').addEventListener('submit', async (e) => 
   });
 
   if (response.ok) {
-    alert('Message sent successfully!');
+    window.location.href = 'thank_you.html'; // Redirect to the thank_you.html page
   } else {
     alert('Failed to send message.');
   }
